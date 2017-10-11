@@ -1,7 +1,5 @@
 package com.gitrep.mylibrary;
 
-import android.util.Log;
-
 import com.google.gson.Gson;
 
 /**
@@ -11,8 +9,6 @@ import com.google.gson.Gson;
 public class DecodeJson {
 
     public static Object decode(String json, Class clazzName) throws Exception{
-        Log.e("TAG", "decode: glad");
-        Log.e("TAG", "decode: bad");
         return new Gson().fromJson(json, clazzName);
     }
 }
